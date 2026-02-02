@@ -45,11 +45,11 @@ const App: React.FC = () => {
           </h1>
           <div className="mb-6 flex justify-center">
             <img 
-              src="https://i.pinimg.com/736x/8f/30/0b/8f300b91d7e793933c06d88566580f4a.jpg" 
+              src="relationship-love.gif" 
               alt="Lovely Bugs Bunny" 
-              className="rounded-xl shadow-lg w-72 h-72 object-cover border-4 border-pink-200"
+              className="rounded-xl shadow-lg w-96 h-72 object-cover border-4 border-pink-200"
               onError={(e) => {
-                (e.target as HTMLImageElement).src = "https://w7.pngwing.com/pngs/454/534/png-transparent-bugs-bunny-looney-tunes-rabbit-drawing-bunny-face-mammal-animals-carnivoran-thumbnail.png";
+                (e.target as HTMLImageElement).src = "relationship-love.gif";
               }}
             />
           </div>
