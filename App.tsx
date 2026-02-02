@@ -45,11 +45,11 @@ const App: React.FC = () => {
           </h1>
           <div className="mb-6 flex justify-center">
             <img 
-              src="/relationship-love.gif" 
+              src="relationship-love.gif" 
               alt="Lovely Bugs Bunny" 
-              className="rounded-xl shadow-lg w-96 h-72 object-cover border-4 border-pink-200"
+              className="rounded-xl shadow-lg w-96 h-84 object-cover border-4 border-pink-200"
               onError={(e) => {
-                (e.target as HTMLImageElement).src = "/relationship-love.gif";
+                (e.target as HTMLImageElement).src = "relationship-love.gif";
               }}
             />
           </div>
