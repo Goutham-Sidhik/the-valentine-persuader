@@ -45,11 +45,14 @@ const App: React.FC = () => {
           </h1>
           <div className="mb-6 flex justify-center">
             <img 
-              src="/relationship-love.gif" 
+              src={`${import.meta.env.BASE_URL}relationship-love.gif`}
               alt="Lovely Bugs Bunny" 
               className="rounded-xl shadow-lg w-96 h-84 object-cover border-4 border-pink-200"
               onError={(e) => {
-                (e.target as HTMLImageElement).src = "/relationship-love.gif";
+                // Prevent infinite loop and fall back to the JPG in public (respecting base)
+                const target = e.target as HTMLImageElement;
+                target.onerror = null;
+                target.src = `${import.meta.env.BASE_URL}relationship-love.jpg`;
               }}
             />
           </div>
